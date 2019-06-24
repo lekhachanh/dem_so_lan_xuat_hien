@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function CountNum(arr, number) {
+        let count = 0;
+        for (let i=0; i<arr.length; i++) {
+            if (number === arr[i]) {
+                count++;
+            }
+        }
+        alert("số " + number+ " xuất hiện " + count + " lần")
+    }
+    let nums = [];
+    for (let i=0; i<100; i++) {
+        nums[i] = Math.floor(Math.random()*101);
+    }
+    let arr1 = new CountNum(nums, 10);
+    alert(nums);
+
+</script>
+</body>
+</html>
